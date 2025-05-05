@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>热门话题</title>
+    <!--清空样式-->
+    <link rel="stylesheet" href="css/base/reset.css">
+    <!--默认样式-->
+    <link rel="stylesheet" href="css/base/default.css">
+    <!--容器样式-->
+    <link rel="stylesheet" href="css/container.css">
+    <!--内容区样式-->
+    <link rel="stylesheet" href="css/content.css">
+</head>
+<body>
+    <!--header-->
+    <ast-header nav-selected="3"></ast-header>
+    <script src="js/ast-header.js"></script>
+
+    <!--main-->
+    <main style="background-image: url('img/bg_container.jpg');">
+        <div id="view_container">
+
+            <!--侧边栏-->
+            <div id="sidebar_container">
+                <side-bar></side-bar>
+            </div>
+
+            <div id="content_container">
+
+                <!--标题-->
+                <div id="content_title">每日一荐</div>
+
+                <!--内容区-->
+                <div id="content">
+                    <h1>每日推文1</h1>
+                        <embed src="pdf\在校大学生近视性屈光参差双眼视功能研究_王丝雨.pdf" width=600" height="675">
+                       
+                    <h1>每日推文2</h1>
+                        <embed src="pdf\学龄期近视影响因素的研究进展_张颜.pdf" width="600" height="375">
+                    <h1>每日推文3</h1> 
+                        <embed src="pdf\中西医防控儿童青少年近视的研究进展_张芮.pdf" width="600" height="375">
+                    <h1>每日推文4</h1>
+                        <embed src="pdf\左韬教授经验总结及针灸治疗...童青少年近视的取穴规律研究_周丽华.pdf" width="600" height="375">
+                        
+                </div>
+            </div>
+            <script src="js/content.js"></script>
+            <script src="js/sidebar.js"></script>
+        </div>
+    </main>
+
+    <!--footer-->
+    <ast-footer></ast-footer>
+    <script src="js/ast-footer.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+/* header */
+header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(120, 226, 91);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* nav_icon */
+#nav_logo {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#nav_logo_img {
+    width: auto;
+    height: 70%;
+    object-fit: contain;
+    margin-left: 15px;
+}
+#nav_logo_title {
+    width: auto;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    background-image: var(--gradient-color);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+
+/* nav_list */
+#nav_list {
+    width: 60%;
+    height: inherit;
+    display: flex;
+}
+
+
+/* nav_list item */
+#nav_list .nav_item {
+    width: 20%;
+    height: 100%;
+}
+#nav_list .nav_item>a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4em;
+    transition: background-color 0.3s;
+}
+#nav_list .nav_item>a:hover {
+    background-color: var(--nav-hover-bg-color);
+    color: var(--nav-hover-color);
+}
+
+
+/* menu */
+#nav_list .menu {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    background-color: var(--header-bg-color);
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    z-index: 5;
+    transition: max-height 0.4s;
+}
+#nav_list .nav_item:hover .menu {
+    max-height: 500px; /* 使用max-height动态适配高度，max-height需要比展开后的height大 */
+}
+
+
+/* menu item */
+#nav_list .menu_item {
+    width: 100%;
+    height: 50px;
+}
+#nav_list .menu_item:last-child {
+    margin-bottom: 10px;
+}
+#nav_list .menu_item a {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+#nav_list .menu_item a:hover{
+    background-color: var(--nav-hover-color);
+}
+
+/* nav_selected_item */
+#nav_selected {
+    background-color: var(--nav-hover-bg-color);
+}

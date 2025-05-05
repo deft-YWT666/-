@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>热门话题</title>
+    <!--清空样式-->
+    <link rel="stylesheet" href="css/base/reset.css">
+    <!--默认样式-->
+    <link rel="stylesheet" href="css/base/default.css">
+    <!--容器样式-->
+    <link rel="stylesheet" href="css/container.css">
+    <!--内容区样式-->
+    <link rel="stylesheet" href="css/content.css">
+</head>
+<body>
+    <!--header-->
+    <ast-header nav-selected="3"></ast-header>
+    <script src="js/ast-header.js"></script>
+
+    <!--main-->
+    <main style="background-image: url('img/bg_container.jpg');">
+        <div id="view_container">
+
+            <!--侧边栏-->
+            <div id="sidebar_container">
+                <side-bar></side-bar>
+            </div>
+
+            <div id="content_container">
+
+                <!--标题-->
+                <div id="content_title">猜您想看</div>
+
+                <!--内容区-->
+                <div id="content">
+                    <h1>更多1</h1>
+                    <a href="https://www.kepuchina.cn/search/index?search=%E8%BF%91%E8%A7%86%E9%98%B2%E6%8E%A7&search_type=1">科普中国</a>
+                    <h1>更多2</h1> 
+                    <a href="https://www.baidu.com/s?tn=15007414_24_dg&wd=%E8%BF%91%E8%A7%86%E9%98%B2%E6%8E%A7">百度</a>
+                </div>
+            </div>
+            <script src="js/content.js"></script>
+            <script src="js/sidebar.js"></script>
+        </div>
+    </main>
+
+    <!--footer-->
+    <ast-footer></ast-footer>
+    <script src="js/ast-footer.js"></script>
+</body>
+</html>

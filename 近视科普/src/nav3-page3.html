@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>热门话题</title>
+    <!--清空样式-->
+    <link rel="stylesheet" href="css/base/reset.css">
+    <!--默认样式-->
+    <link rel="stylesheet" href="css/base/default.css">
+    <!--容器样式-->
+    <link rel="stylesheet" href="css/container.css">
+    <!--内容区样式-->
+    <link rel="stylesheet" href="css/content.css">
+</head>
+<body>
+    <!--header-->
+    <ast-header nav-selected="3"></ast-header>
+    <script src="js/ast-header.js"></script>
+
+    <!--main-->
+    <main style="background-image: url('img/bg_container.jpg');">
+        <div id="view_container">
+
+            <!--侧边栏-->
+            <div id="sidebar_container">
+                <side-bar></side-bar>
+            </div>
+
+            <div id="content_container">
+
+                <!--标题-->
+                <div id="content_title">相关政策</div>
+
+                <!--内容区-->
+                <div id="content">
+                    <p>为贯彻落实党中央、国务院关于儿童青少年近视防控的重要指示精神，为我省积极落实国家八部委出台的《综合防控儿童青少年近视实施方案》及教育部办公厅印发的《2024年全国综合防控儿童青少年近视重点工作计划》要求，全面做好青少年近视防控及眼健康宣传工作，助力全省青少年近视防控眼健康科普工作深入开展，实现“健康中国”的核心目标，激发创新意识，专业技能，秉承“以赛促学、以学促用”的理念，进一步提高大学生的实践能力，搭建“大健康设计”经验与成果的交流平台，提高人才培养质量，拓展产学研合作领域，宣传青少年近视防控及眼健康知识，推动眼科学普及、眼科技传播。</p>
+                    <h1>相关政策1</h1>
+                        <a href="https://www.gov.cn/gongbao/content/2019/content_5361801.htm">《综合防控儿童青少年近视实施方案》</a>
+                    
+                    <h1>相关政策2</h1>
+                       <a href="http://www.moe.gov.cn/srcsite/A17/moe_943/s3285/202105/t20210511_530655.html">教育部办公厅等十五部门关于印发《儿童青少年近视防控光明行动工作方案（2021—2025年）》的通知</a>
+                           
+                        
+                    <h1></h1>     
+            </div>
+            <script src="js/content.js"></script>
+            <script src="js/sidebar.js"></script>
+        </div>
+    </main>
+
+    <!--footer-->
+    <ast-footer></ast-footer>
+    <script src="js/ast-footer.js"></script>
+</body>
+</html>

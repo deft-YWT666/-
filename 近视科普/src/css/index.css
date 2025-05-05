@@ -1,0 +1,24 @@
+/* main */
+main {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+#start_btn {
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    left: 44%;
+    bottom: 34%;
+    border-radius: 15px;
+    font-size: 1.2em;
+    color: white;
+    border: 0;
+    background-image: var(--gradient-color);
+    transition: all 0.2s;
+}
+#start_btn:hover {
+    box-shadow: 0 0 20px 4px var(--start-button-hover-color);
+}
+

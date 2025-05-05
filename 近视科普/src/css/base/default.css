@@ -1,0 +1,19 @@
+:root {
+    --main-color: #0466be;
+    --header-bg-color: rgb(43, 49, 56);
+    --gradient-color: linear-gradient(135deg, #5b247a, #1bcedf);
+    --nav-hover-color: var(--main-color);
+    --nav-hover-bg-color: rgb(29, 33, 38);
+    --start-button-hover-color: var(--main-color);
+    --footer-bg-color: rgb(43, 49, 56);
+    --side-bar-item-hover-color: #eee;
+    --carousel-img-border-color: #9e9e9e;
+}
+body,html {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+li {
+    list-style: none;
+}
